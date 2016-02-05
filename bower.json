@@ -1,0 +1,26 @@
+{
+  "name": "sample",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Eric Bronnimann <ebronnimann@mediaocean.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "knockout": "~3.4.0",
+    "font-awesome": "fontawesome#~4.5.0",
+    "bootstrap": "~3.3.6",
+    "tota11y": "~0.1.3"
+  }
+}

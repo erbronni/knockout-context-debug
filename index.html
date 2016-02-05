@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/knockout/dist/knockout.debug.js"></script>
+    <script src="bower_components/tota11y/build/tota11y.js"></script>
+    <script>
+        (function () {
+            'use strict';
+
+            var DisplayViewModel = function() {
+                var self;
+                self = {
+                    textFromModel: 'Label text to show'
+
+                };
+                return self;
+            };
+            $(document).ready(function () {
+                ko.applyBindings(DisplayViewModel());
+            });
+        })();
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Sample Attribute Binding</h1>
+        <p>
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </p>
+        <button class="btn btn-success center-block" data-bind="attr: {'aria-label': textFromModel}">
+            <i class="fa fa-pie-chart fa-5x"></i>
+        </button>
+    </div>
+</div>
+</body>
+</html>
