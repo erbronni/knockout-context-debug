@@ -12,7 +12,7 @@ To see the sample, run the following commands to install the dependencies:
 Then open the ```index.html``` file in Chrome and inspect the button element.  It should look something like the screen shot below:
 
 
-![Screen Shot of Chrome inspecting Knockout context](./screenshot.png)
+![Screen Shot of Chrome inspecting Knockout context ](./screenshot.png)
 
 
 Knockoutjs Context Debugger
